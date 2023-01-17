@@ -4,25 +4,28 @@
 let pesor,altura,calulor;
 pesor = 10;
 altura = 1.50;
-calulor=pesor/ (altura *altura)
+function imc(pesor,altura){
 
-calulor = 29;
-
+let n1=pesor/ (altura *altura);
+return n1;
+}
+//calulor = 29;
+calulor = imc(pesor,altura);
 if(calulor <= 15 ){
-    alert('Magreza grave');
+    console.log('Magreza grave');
 
 }else if(calulor >=16  && calulor <= 17 ){
-    alert("magreza moderada")
+    console.log("magreza moderada")
 }else if(calulor>=17 && calulor < 18.5){
-    alert("magreza leve");
-}else if(calulor >= 18,5 && calulor < 25){
- alert("saudável");
+    console.log("magreza leve");
+}else if(calulor>= 18,5 && calulor < 25){
+ console.log("saudável");
 }else if(calulor >= 25 && calulor < 30){
-    alert("sobrepeso");
+    console.log("sobrepeso");
 }
 else if(calulor >= 30 && calulor <35){
-    alert("Obesidade grau 1");
+    console.log("Obesidade grau 1");
  }
  else if(calulor >= 35 && calulor < 40){
-    alert("Obesidade grau 2");
+    console.log("Obesidade grau 2");
 }
